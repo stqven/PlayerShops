@@ -1,0 +1,94 @@
+#Permissions:
+# shops.admin // To enable /Shop settings
+shops-enabled: true # Weather you want to enable the shop or not
+Settings:
+  default-min-sell-price: 10
+  default-min-sell-time: 1h # y: Year, m: Month, w: Week, d: Day, h: Hour, m: Minute, s: Second
+  min-shop-name-length: 3
+  max-shop-name-length: 8
+  inventory-name: "Shop Settings"
+  Items:
+    toggle-enabled:
+      name: "&eToggle: &aEnabled"
+      lore:
+        - "&fClick to &cDisable"
+    toggle-disabled:
+      name: "&eToggle: &cDisabled"
+      lore:
+        - "&fClick to &aEnable"
+    min-price:
+      name: "&eMin Price: &f%min_price%"
+      lore:
+        - "&fLeft-Click &eto increase by $10"
+        - "&fRight-Click &eto decrease by $10"
+        - "&fShift-Click &eto do $100"
+    min-time:
+      name: "&eMin Time: &f%min_time%"
+      lore:
+      - "&fLeft-Click &eto add 1 hour"
+      - "&fRight-Click &eto remove 1 hour"
+      - "&fShift-Click &eto do 1 day"
+    rename:
+      name: "&eRename your shop"
+      lore:
+        - "&7Give your shop a new name"
+Messages:
+  prefix: "&8| &bShops &8|&7"
+  list-item-not-found: "%prefix% &cList cancelled! No item found!"
+  list-item-blocked: "%prefix% &cList cancelled! This item is blocked!"
+  shop-close: "%prefix% &7This shop is closed!"
+  next-page: "&bNext Page &8&l>>"
+  previous-page: "&8&l<< &bPrevious Page"
+  shop-items-lore:
+    - "&8-------------------------"
+    - "&bOwner: &f%owner%"
+    - "&bPrice: &f%price%"
+    - "&bExpire Date: &f%expire_date%"
+    - "&8-------------------------"
+    - "&fClick to buy!"
+  shop-info-lore:
+    - "&eListed Items: &f%listed_items%"
+    - "&eAverage Price: &f%avg_price%"
+    - "&eList Times: &f%list_times%"
+    - "&eSell Times: &f%sell_times%"
+    - "&eOwner: &f%owner%"
+  list-item-price-name: "&ePrice: &f%price%"
+  list-item-price-lore:
+    - "&fLeft-Click &bto increase by $10"
+    - "&fRight-Click &bto decrease by $10"
+    - "&fShift-Click &bto do $100"
+  list-item-time-name: "&eListing Time: &f%time%"
+  list-item-time-lore:
+    - "&fLeft-Click &bto add 1 hour"
+    - "&fRight-Click &bto remove 1 hour"
+    - "&fShift-Click &bto do 1 day"
+  list-save-name: "&cSave!"
+  list-save-lore:
+    - "&fClick to list this item!"
+  shop-name-inventory: "Shop: &c%shop_name%"
+  list-item-name-inventory: "&8List an item"
+  shop-commands:
+    create-success: "%prefix% &aYou have successfuly created a shop with name &b%shop_name%"
+    rename-success: "%prefix% &aYou have successfuly changed your shop's name to &b%shop_name%"
+    max-shop-reached: "%prefix% &cYou've reached the maximum number of shops"
+    list-success: "%prefix% &aItem successfully listed &8(&b%item_name%&8)"
+    shop-already-taken: "%prefix% &cThis name is already taken"
+    shop-not-exist: "%prefix% &cCan't find a shop with name &b%shop_name%"
+    shop-toggle-allow: "%prefix% &aEveryone can use your shop now!"
+    shop-no-enough-money: "%prefix% &cYou don't have enough money"
+    shop-success-buy: "%prefix% &aYou have successfully bought this item"
+    shop-toggle-deny: "%prefix% &cNo one will be able use your shop anymore!"
+    shop-toggle-allow-broadcast: "%prefix% &b%shop_name% &ais open again!"
+    shop-toggle-deny-broadcast: "%prefix% &b%shop_name% &chas been closed!"
+    shop-create-max-length: "%prefix% &cYour shop's name is too long, try to choose shorter one"
+    shop-create-min-length: "%prefix% &cYour shop's name is too short, try to choose longer one"
+    shop-not-having: "%prefix% &cYou don't have any shop yet! Use &b/Shop create [shop_name]"
+    no-permissions: "%prefix% &cYou don't have enough permissions to do this"
+    help:
+      create: "%prefix% &7/Shop create [shop_name] &8* &9Create a new shop"
+      settings: "%prefix% &7/Shop settings &8* &9Edit your shop's settings"
+      list: "%prefix% &7/Shop list [shop_name] [price] [duration] <hand> &8* &9List an item to a specific shop"
+      toggle: "%prefix% &7/Shop toggle &8* &9Allow/Deny others from using your shop"
+      open: "%prefix% &7/Shop [shop_name] &8* &9Open a specific shop"
+blocked-items:
+  - "GRASS"

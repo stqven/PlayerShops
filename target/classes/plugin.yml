@@ -1,0 +1,8 @@
+name: PlayerShops
+main: com.inv.PlayerShopsPlugin
+author: inv
+api-version: 1.16
+version: 1.16
+depend: [Vault]
+commands:
+  shop:

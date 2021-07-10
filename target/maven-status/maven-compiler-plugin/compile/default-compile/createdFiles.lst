@@ -1,0 +1,13 @@
+com\inv\list\ListInventoryEvents.class
+com\inv\VaultAPI.class
+com\inv\list\ListInventory.class
+com\inv\DS\TimeConverter.class
+com\inv\shop\ShopCommand.class
+com\inv\DS\Pair.class
+com\inv\shop\ShopInventoryEvents.class
+com\inv\PlayerShopsPlugin$1.class
+com\inv\PlayerShopsPlugin.class
+com\inv\Config.class
+com\inv\settings\SettingsInventory.class
+com\inv\settings\SettingsInventoryEvents.class
+com\inv\shop\Shop.class
